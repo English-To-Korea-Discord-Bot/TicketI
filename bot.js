@@ -26,7 +26,7 @@ const cooldowns = new Discord.Collection(); // Cooldowns collection
 
 /*Invokes When BOT is ready to do tasks*/ 
 client.once('ready', () => {
-    console.log('Ticket Tool is Ready!');
+    console.log('티켓이가 준비 되었어요!');
 });
 
 client.on('messageReactionAdd',async (messageReaction,user)=>{
