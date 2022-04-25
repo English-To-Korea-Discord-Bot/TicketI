@@ -1,7 +1,6 @@
 {
-    "prefix":"$",
-    "token":"bot-token",
-    "url":"mongo-db-url",
-    "dbName":"db-name",
-    "paypal_email": "your-paypal-email"
+    "prefix":"k!",
+    "token":"",
+    "url":"",
+    "dbName":""
 }
