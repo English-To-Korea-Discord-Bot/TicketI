@@ -34,7 +34,7 @@ client.on('messageReactionAdd',async (messageReaction,user)=>{
     function SpamTicket(auID,chID){
         return new Discord.MessageEmbed()
             .setColor('#28df99')
-            .setDescription(`<@${auID}> You've Already a Ticket opened at <#${chID}>`)
+            .setDescription(`<@${auID}> 이미 티켓을 여셨어요! <#${chID}>`)
             .setTimestamp()
             .setFooter('White2001#0530™  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
