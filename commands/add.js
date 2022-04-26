@@ -4,17 +4,17 @@ const mongo = require('../src/connect');
 function noArgs(id){
     return new Discord.MessageEmbed()
         .setColor('#ff4b5c')
-        .setDescription(`<@${id}> You didn't specified any argument`)
+        .setDescription(`<@${id}> 인수를 지정 하지 않으셨어요..`)
         .setTimestamp()
-        .setFooter('White2001#0530™  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+        .setFooter('근태#5427 - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
 }
 
 function added(id){
     return new Discord.MessageEmbed()
         .setColor('#bbf1c8')
-        .setDescription(`<@${id}> Added to Ticket`)
+        .setDescription(`<@${id}> 티켓을 추가했습니다.`)
         .setTimestamp()
-        .setFooter('White2001#0530™  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+        .setFooter('근태#5427 - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
 }
 
 function author(client,args){

@@ -36,7 +36,7 @@ client.on('messageReactionAdd',async (messageReaction,user)=>{
             .setColor('#28df99')
             .setDescription(`<@${auID}> 이미 티켓을 여셨어요! <#${chID}>`)
             .setTimestamp()
-            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427 - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     function ticketClosed(auID){
@@ -44,7 +44,7 @@ client.on('messageReactionAdd',async (messageReaction,user)=>{
             .setColor('#28df99')
             .setDescription(`티켓이 닫았어요! by <@${auID}>`)
             .setTimestamp()
-            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427 - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     function ticketDeletePopup(){
@@ -52,7 +52,7 @@ client.on('messageReactionAdd',async (messageReaction,user)=>{
             .setColor('#ff4b5c')
             .setDescription(`이 티켓은 5초 뒤에 삭제가 되요!`)
             .setTimestamp()
-            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427 - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     function noAdmin_close(id){
@@ -60,7 +60,7 @@ client.on('messageReactionAdd',async (messageReaction,user)=>{
             .setColor('#ff4b5c')
             .setDescription(`<@${id}> 관리자 권한이 없어 티켓을 닫을수 없어요..`)
             .setTimestamp()
-            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427 - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     function noAdmin_delete(id){
@@ -68,7 +68,7 @@ client.on('messageReactionAdd',async (messageReaction,user)=>{
             .setColor('#ff4b5c')
             .setDescription(`<@${id}> 관리자 권한이 없어 티켓을 닫을수 없어요..`)
             .setTimestamp()
-            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427 - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     if (messageReaction.partial) {
@@ -191,9 +191,9 @@ client.on('message', async message => {
         function e_invalid() {
             return new Discord.MessageEmbed()
                 .setColor('#d40808')
-                .setDescription(`I can\'t execute that command inside DMs!`)
+                .setDescription(`개인메세지에서는 명령어를 실행 하실 수 없습니다.`)
                 .setTimestamp()
-                .setFooter('White2001#0530');
+                .setFooter('근태#5427');
         }
         return message.channel.send(e_invalid())
     }
@@ -205,9 +205,9 @@ client.on('message', async message => {
             function e_invalid() {
                 return new Discord.MessageEmbed()
                     .setColor('#d40808')
-                    .setDescription(`You didn't provide any arguments, ${message.author}!\nThe proper usage would be: \`prefix${command.name} ${command.usage}\``)
+                    .setDescription(`어떤 말도 하지 않으셨습니다., ${message.author}!\n사용법은 다음과 같습니다.K!{command.name} K!{command.usage}\``)
                     .setTimestamp()
-                    .setFooter('White2001#0530');
+                    .setFooter('근태#5427');
             }
 
             return message.channel.send(e_invalid()).then(msg => {
@@ -218,9 +218,9 @@ client.on('message', async message => {
             function e_invalid() {
                 return new Discord.MessageEmbed()
                     .setColor('#d40808')
-                    .setDescription(`You didn't provide any arguments, ${message.author}!`)
+                    .setDescription(`어떤 말도 하지 않으셨습니다., ${message.author}!`)
                     .setTimestamp()
-                    .setFooter('White2001#0530');
+                    .setFooter('근태#5427');
             }
 
             return message.channel.send(e_invalid()).then(msg => {
