@@ -36,39 +36,39 @@ client.on('messageReactionAdd',async (messageReaction,user)=>{
             .setColor('#28df99')
             .setDescription(`<@${auID}> 이미 티켓을 여셨어요! <#${chID}>`)
             .setTimestamp()
-            .setFooter('White2001#0530™  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     function ticketClosed(auID){
         return new Discord.MessageEmbed()
             .setColor('#28df99')
-            .setDescription(`Order Closed by <@${auID}>`)
+            .setDescription(`티켓이 닫았어요! by <@${auID}>`)
             .setTimestamp()
-            .setFooter('White2001#0530™  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     function ticketDeletePopup(){
         return new Discord.MessageEmbed()
             .setColor('#ff4b5c')
-            .setDescription(`This order will be deleted in 5 seconds`)
+            .setDescription(`이 티켓은 5초 뒤에 삭제가 되요!`)
             .setTimestamp()
-            .setFooter('White2001#0530™  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     function noAdmin_close(id){
         return new Discord.MessageEmbed()
             .setColor('#ff4b5c')
-            .setDescription(`<@${id}> You're not a Admin. You can't Close Ticket`)
+            .setDescription(`<@${id}> 관리자 권한이 없어 티켓을 닫을수 없어요..`)
             .setTimestamp()
-            .setFooter('White2001#0530™  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     function noAdmin_delete(id){
         return new Discord.MessageEmbed()
             .setColor('#ff4b5c')
-            .setDescription(`<@${id}> You're not a Admin. You can't Close Ticket`)
+            .setDescription(`<@${id}> 관리자 권한이 없어 티켓을 닫을수 없어요..`)
             .setTimestamp()
-            .setFooter('White2001#0530™  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
+            .setFooter('근태#5427  - Type $help 🎵','https://cdn.discordapp.com/avatars/774628881910202378/548e0caa288842504514596856039e9c.png?size=256');
     }
 
     if (messageReaction.partial) {
@@ -76,7 +76,7 @@ client.on('messageReactionAdd',async (messageReaction,user)=>{
 		try {
 			await messageReaction.fetch();
 		} catch (error) {
-			console.log('Something went wrong when fetching the message: ', error);
+			console.log('메세지를 가져오는중에 오류가 발생했어요..! 해당 오류가 반복이 된다면 서포트 서버에 문의 부탁 드려요!: ', error);
 			// Return as `reaction.message.author` may be undefined/null
 			return;
 		}
